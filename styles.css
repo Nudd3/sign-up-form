@@ -1,5 +1,82 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5d6063;
+  background-color: #eaedf0;
   
+  display: flex;
+  
+  
+  
+}
+
+
+.form-column {
+  background-color: #000;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-row {
+  font-size: 1.5rem;
+  width: min(100%, 45ch);
+}
+
+.intro-row,
+.submit-row,
+.content {
+  flex: 1;
+  background-color: #222;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="tel"] {
+  background-color: fff;
+  border: 1px solid blue;
+  border-radius: 3px;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+}
+
+.content {
+  background-color: rgb(38, 38, 38);
+  width: 100%;
+  margin: 10;
+  padding: 10;
+}
+
+.image-column {
+  position: relative;
+  background-image: url(images/pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 40%;
+}
+
+.img-div {
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  background-color: #0000005d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
