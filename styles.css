@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #66fcf1;
 }
 
 body, html {
   width: 100%;
   display: flex;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 600;
 }
@@ -27,22 +28,21 @@ label {
 
 
 .form-column {
-  background-color: #ffffff5d;
   display: flex;
   flex-direction: column;
   
   position: relative;
   width: 60%;
   float: right;
-  background-color:deepskyblue;
+  background-color: #0b0c10;
 }
 
 
 .intro-row {
-  background-color:firebrick;
   width: 425px;
   margin-left: 30px;
-  margin-top: 100px;
+  margin-top: 75px;
+  margin-bottom: 25px;
 }
 
 .intro-row p {
@@ -60,49 +60,72 @@ label {
 .form-row input[type="password"] {
   border: 1px solid #d6d9dc;
   border-radius: 5px;
-  padding: 3px 0;
+  padding: 3px 15px;
   font-size: 14px;
   margin-right: 50px;
+  font-weight: bold;
+  background-color: #FEFFFF;
+  color: #07DB2AFF;
 }
 
-.form-input {
-  
+.form-row input[type="text"]:invalid,
+.form-row input[type="email"]:invalid,
+.form-row input[type="tel"]:invalid,
+.form-row input[type="password"]:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
 }
 
 .content {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  background-color: #1f2833;
+  box-shadow: rgba(73, 73, 73, 0.15) 0px 3px 3px 0px;
   padding: 25px 40px 20px;
   margin-top: 25px;
   
 }
 
 .content p {
-  margin-top: 5px;
-  margin-bottom: 10px;
+  
+  margin-bottom: 15px;
 }
 /* Button Styling*/
 
 .submit-row button{
-  
+  background-color: #0b0c10;
+  color: #FEFFFF;
+
   margin: 40px 0 0 40px;
-  background-color:maroon;
+  padding: 10px 30px;
+
   font-size: 16px;
   font-weight: bold;
-  border: none;
-  border-radius: 7px;
-  padding: 10px 30px;
+  
+  border: 3px solid #66fcf1;
+  border-radius: 3px;
+  
   cursor: pointer;
 }
 
 .submit-row button:hover {
-  background-color: red;
+  background-color: #45a29e;
+  border-color: #45a29e;
 }
 
 .submit-row button:active {
-  background-color: green;
+  border: 3px solid #66fcf1;
+  background-color: #66fcf1;
 }
 
+.submit-row p {
+  margin: 25px 40px;
+  font-size: 14px;
+}
+
+.submit-row a {
+  color: #45a29e;
+  text-decoration: none;
+}
 /* Image Styling */
 .image-column {
   position: relative;
@@ -121,6 +144,25 @@ label {
   background-color: #0000005d;
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center; 
+  font-size: 50px;
 }
+
+.img-div img {
+  width: 15%;
+}
+
+.image-column .credit {
+  position:absolute;
+  bottom:10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+
+  font-size: 15px;
+
+}
+
+
