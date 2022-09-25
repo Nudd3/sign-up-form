@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #66fcf1;
+  /*color: #66fcf1;*/
+}
+
+:root {
+  --form-text-color: #66fcf1;
+  --form-bg-color: #0b0c10;
 }
 
 body, html {
@@ -34,7 +39,8 @@ label {
   position: relative;
   width: 60%;
   float: right;
-  background-color: #0b0c10;
+  background-color: var(--form-bg-color);
+  color: var(--form-text-color);
 }
 
 
@@ -92,7 +98,7 @@ label {
 /* Button Styling*/
 
 .submit-row button{
-  background-color: #0b0c10;
+  background-color: var(--form-bg-color);
   color: #FEFFFF;
 
   margin: 40px 0 0 40px;
@@ -146,13 +152,14 @@ label {
   align-items: center;
   justify-content: center; 
   font-size: 50px;
+  color: var(--form-text-color);
 }
 
 .img-div img {
   width: 15%;
 }
 
-.image-column .credit {
+.image-column .credit{
   position:absolute;
   bottom:10px;
   left: 0;
@@ -162,7 +169,11 @@ label {
   width: 300px;
 
   font-size: 15px;
+  color: var(--form-text-color);
+}
 
+.image-column a {
+  color: var(--form-text-color);
 }
 
 
