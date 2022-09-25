@@ -4,63 +4,106 @@
   box-sizing: border-box;
 }
 
-body {
-  color: #5d6063;
-  background-color: #eaedf0;
-  
+body, html {
+  width: 100%;
   display: flex;
-  
-  
-  
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+label, input {
+  display: block;
+}
+
+label {
+  text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
 }
 
 
 .form-column {
-  background-color: #000;
-  text-align: left;
+  background-color: #ffffff5d;
   display: flex;
   flex-direction: column;
+  
+  position: relative;
+  width: 60%;
+  float: right;
+  background-color:deepskyblue;
 }
+
 
 .intro-row {
-  font-size: 1.5rem;
-  width: min(100%, 45ch);
+  background-color:firebrick;
+  width: 425px;
+  margin-left: 30px;
+  margin-top: 100px;
 }
 
-.intro-row,
-.submit-row,
-.content {
-  flex: 1;
-  background-color: #222;
+.intro-row p {
+  margin-top: 15px;
 }
 
 .form-row {
-  margin-bottom: 40px;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 .form-row input[type="text"],
 .form-row input[type="email"],
-.form-row input[type="password"],
-.form-row input[type="tel"] {
-  background-color: fff;
-  border: 1px solid blue;
-  border-radius: 3px;
+.form-row input[type="tel"],
+.form-row input[type="password"] {
+  border: 1px solid #d6d9dc;
+  border-radius: 5px;
+  padding: 3px 0;
+  font-size: 14px;
+  margin-right: 50px;
 }
 
-.form-row label {
-  margin-bottom: 5px;
+.form-input {
+  
 }
 
 .content {
-  background-color: rgb(38, 38, 38);
-  width: 100%;
-  margin: 10;
-  padding: 10;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  padding: 25px 40px 20px;
+  margin-top: 25px;
+  
 }
 
+.content p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+/* Button Styling*/
+
+.submit-row button{
+  
+  margin: 40px 0 0 40px;
+  background-color:maroon;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.submit-row button:hover {
+  background-color: red;
+}
+
+.submit-row button:active {
+  background-color: green;
+}
+
+/* Image Styling */
 .image-column {
   position: relative;
   background-image: url(images/pawel-czerwinski-6lQDFGOB1iw-unsplash.jpg);
@@ -79,4 +122,5 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
